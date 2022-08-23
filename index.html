@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <section class="container">
+            <div class="row d-flex align-items-center">
+                <div class="user col-12 col-lg-4 d-flex justify-content-center mb-3 mb-lg-0">
+                    <div>
+                        <i class="fa-solid fa-user fa-lg"></i>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center col-12 col-lg-4">
+                    <img class="logo-img"
+                        src="./img/1000_F_264553054_iOmkGWHI2ectykyqKvbUgpnIyRtB7tKg-removebg-preview.png" alt="">
+                </div>
+                <div class="col-12 col-lg-4 d-flex justify-content-center my-4">
+                    <div class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping fa-lg position-relative">
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge">
+                                0
+                            </span>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- products -->
+    <main class="container">
+        <div class="d-flex justify-content-center p-4">
+            <h5><a href="">Home</a> ><a href=""> Products</a></h5>
+        </div>
+        <section class="row boxes d-flex justify-content-center"></section>
+    </main>
+    <!-- cart pop up -->
+    <section class="d-flex justify-content-center">
+        <div class="backdrop"></div>
+        <div class="cartt">
+            <div>
+                <i class="fa-solid fa-xmark"></i>
+                <h5 class="text-center p-3">Shopping Cart</h5>
+            </div>
+            <div class="cart-items container"></div>
+            <!-- total -->
+            <div class="row container d-flex justify-content-evenly align-items-center my-4 footer-box">
+                <p class="total col-md-3 col-4"></p>
+                <button class="btn btn-danger clear-cart col-md-3 col-4">Clear Cart</button>
+                <button class="btn btn-secondary col-md-3 col-4">Continue</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script type="module" src="./cart.js"></script>
+
+</html>
